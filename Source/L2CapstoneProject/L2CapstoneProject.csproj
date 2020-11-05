@@ -43,6 +43,9 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Beamformer.cs" />
+    <Compile Include="SequenceType.cs" />
+    <Compile Include="PAvTTest.cs" />
     <Compile Include="PhaseAmplitudeOffset.cs" />
     <Compile Include="frmBeamformerPavtController.cs">
       <SubType>Form</SubType>
