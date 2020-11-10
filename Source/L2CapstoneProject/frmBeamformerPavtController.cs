@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 using NationalInstruments.ModularInstruments.NIRfsg;
-using NationalInstruments.RFmx.InstrMX;
 using NationalInstruments.ModularInstruments.SystemServices.DeviceServices;
+using NationalInstruments.RFmx.InstrMX;
 
 namespace L2CapstoneProject
 {
@@ -124,7 +124,11 @@ namespace L2CapstoneProject
 
             if (r == DialogResult.OK)
             {
+                var settings = dialog.GetSettings();
+                string[] offsetRow = { settings.Phase.ToString(), settings.Amplitude.ToString() };
                 // Add the offset to the listview
+                var offsetItem = new ListViewItem(offsetRow);
+                this.lsvOffsets.Items.Add(offsetItem);
             }
         }
         private void EditOffset(int selected)

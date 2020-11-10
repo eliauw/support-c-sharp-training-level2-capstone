@@ -58,6 +58,7 @@
             this.numPhase.Name = "numPhase";
             this.numPhase.Size = new System.Drawing.Size(76, 20);
             this.numPhase.TabIndex = 0;
+            this.numPhase.ValueChanged += new System.EventHandler(this.numPhase_ValueChanged);
             // 
             // label1
             // 

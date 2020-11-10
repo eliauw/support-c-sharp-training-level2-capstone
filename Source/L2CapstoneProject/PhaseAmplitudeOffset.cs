@@ -1,20 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace L2CapstoneProject
+﻿namespace L2CapstoneProject
 {
-    class PhaseAmplitudeOffset
+    public class PhaseAmplitudeOffset
     {
-        public double Phase { get; set; }
-        public double Amplitude { get; set; }
+        public decimal Phase { get; set; }
+        public decimal Amplitude { get; set; }
 
-        public PhaseAmplitudeOffset(double PhaseOffset, double AmplitudeOffset)
+        public PhaseAmplitudeOffset(decimal PhaseOffset, decimal AmplitudeOffset)
         {
             Phase = PhaseOffset;
             Amplitude = AmplitudeOffset;
         }
+
+        //public override string ToString()
+        //{
+        //    return $"Phase: {this.Phase} | Ampliture: {this.Amplitude}";
+        //}
     }
 }
