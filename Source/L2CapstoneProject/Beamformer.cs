@@ -3,29 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NationalInstruments.Common;
 
 namespace L2CapstoneProject
 {
     abstract class Beamformer
     {
-        public abstract Boolean? Connect();
+        public abstract bool? Connect();
 
-        public abstract Boolean? Disconnect();
+        public abstract bool? Disconnect();
         
     }
 
-
     class BeamformerSim : Beamformer
     {
-        override public Boolean? Connect()
+        override public bool? Connect()
         {
-            Boolean? isConnected = null;
+            bool? isConnected = null;
             return isConnected;
         }
 
-        override public Boolean? Disconnect()
+        override public bool? Disconnect()
         {
-            Boolean? isConnected = null;
+            bool? isConnected = null;
             return isConnected;
         }
       
