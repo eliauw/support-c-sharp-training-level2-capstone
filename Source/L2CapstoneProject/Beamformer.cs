@@ -19,14 +19,14 @@ namespace L2CapstoneProject
     {
         override public Boolean? Connect()
         {
-            Boolean? isConneted = null;
-            return isConneted;
+            Boolean? isConnected = null;
+            return isConnected;
         }
 
         override public Boolean? Disconnect()
         {
-            Boolean? isConneted = null;
-            return isConneted;
+            Boolean? isConnected = null;
+            return isConnected;
         }
       
     }
